@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ติดตามพัสดุ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+<a href="contact.html">ติดต่อเรา</a>
+<a href="guide.html">คู่มือ</a>
+<a href="faq.html">FAQ</a>
+
+    <div class="logo">🛍 Online Shop</div>
+</div>
+
+<div class="container">
+<h2>ติดตามพัสดุ</h2>
+<h3>เลขพัสดุ: <span id="track"></span></h3>
+<p>สถานะ: กำลังจัดส่ง</p>
+</div>
+
+<script>
+document.getElementById("track").innerText=
+localStorage.getItem("tracking")||"ไม่มีข้อมูล";
+</script>
+
+</body>
+</html>
